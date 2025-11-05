@@ -27,11 +27,12 @@ using namespace std;
 
 int main()
 {
-
-	while (clsShowLoginScreen::ShowLoginScreen())
+	while (true)
 	{
-
+		clsShowLoginScreen::ShowLoginScreen();
 	}
+
+
 	return 0;
 
 }

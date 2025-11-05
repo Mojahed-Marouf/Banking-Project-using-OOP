@@ -75,6 +75,7 @@ public:
 	}
 	static int readintnumber(int from ,int to,string massege = "invalid number enter nuber again ")
 	{
+		cout << massege << endl;
 		int number = readintnumber();
 		while (!IsNumberBetween(number,from,to))
 		{
