@@ -19,7 +19,7 @@ class clsManageUsersScreen :protected clsScreen
 	{
 
 
-		cout << setw(37) << left << " " << "chose what do you want to do [ 1 - 6 ]" << endl;
+		cout <<"\t" << " " << "chose what do you want to do [ 1 - 6 ]" << endl;
 		short choice = clsInputvalidate::readintnumber(1,6, "Enter Number Between 1 and 6");
 		return choice;
 
@@ -109,17 +109,17 @@ public:
 		}
 		system("cls");
 		_DrawScreenHeader("Manage Users Screen");
-		cout << setw(37) << left << " " << "=============================================================" << endl;
-		cout << setw(37) << left << " " << "\t\t  Manage Users Menu" << endl;
-		cout << setw(37) << left << " " << "=============================================================" << endl;
-		cout << setw(37) << left << " " << "\t [1] List Users " << endl;
-		cout << setw(37) << left << " " << "\t [2] Add New User " << endl;
-		cout << setw(37) << left << " " << "\t [3] Delete User " << endl;
-		cout << setw(37) << left << " " << "\t [4] Update User " << endl;
-		cout << setw(37) << left << " " << "\t [5] Find User " << endl;
-		cout << setw(37) << left << " " << "\t [6] Main Menu " << endl;
+		cout << "\t"<< " " << "=============================================================" << endl;
+		cout << "\t"<< " " << "\t\t  Manage Users Menu" << endl;
+		cout << "\t"<< " " << "=============================================================" << endl;
+		cout << "\t"<< " " << "\t [1] List Users " << endl;
+		cout << "\t"<< " " << "\t [2] Add New User " << endl;
+		cout << "\t"<< " " << "\t [3] Delete User " << endl;
+		cout << "\t"<< " " << "\t [4] Update User " << endl;
+		cout << "\t"<< " " << "\t [5] Find User " << endl;
+		cout << "\t"<< " " << "\t [6] Main Menu " << endl;
 
-		cout << setw(37) << left << " " << "=============================================================" << endl;
+		cout << "\t" << " " << "=============================================================" << endl;
 		_PerformManageUsresMenuOption((enManageUsersMenuOptions)_ReadManageUserOption());
 
 	}

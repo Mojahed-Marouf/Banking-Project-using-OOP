@@ -46,7 +46,7 @@ class clsCurrencyCalculatorScreen :protected clsScreen
 		CurrencyCode = clsInputvalidate::readstring();
 		while (!clsCurrency::IsCurrencyExist(CurrencyCode))
 		{
-			cout << "Currency Is Not Found , Try Again";
+			cout << "Currency Is Not Found , Try Again  ";
 			CurrencyCode = clsInputvalidate::readstring();
 
 		}
@@ -66,14 +66,14 @@ public:
 			system("cls");
 			_DrawScreenHeader("Currency Calculator Screen");
 			
-			clsCurrency CurrencyFrom = _GetCurrency("Please Enter Currency1 Code");
+			clsCurrency CurrencyFrom = _GetCurrency("Please Enter Currency1 Code  ");
 
-			clsCurrency CurrencyTo= _GetCurrency("Please Enter Currency2 Code");
+			clsCurrency CurrencyTo= _GetCurrency("Please Enter Currency2 Code  ");
 		
 			float Amount = _ReadAmount();
 			_PrintCalculationResult(Amount, CurrencyFrom, CurrencyTo);
 			
-			cout << endl<<endl<<"DO YOU WANT TO PERFORM ANOTHER CALCULATION y/n ??";
+			cout << endl<<endl<<"DO YOU WANT TO PERFORM ANOTHER CALCULATION y/n ?? ";
 			cin >> ans;
 
 

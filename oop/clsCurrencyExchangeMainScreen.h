@@ -18,7 +18,7 @@ class clsCurrencyExchangeMainScreen : protected clsScreen
 
     static short _ReadCurrenciesMainMenueOption()
     {
-        cout << setw(37) << left << "" << "Choose what do you want to do? [1 to 5]? ";
+        cout <<"\t" << "" << "Choose what do you want to do? [1 to 5]? "<< endl;
         short Choice = clsInputvalidate::readintnumber(1, 5, "Enter Number between 1 to 5? ");
         return Choice;
     }
@@ -96,15 +96,15 @@ public:
         system("cls");
         _DrawScreenHeader("   Currency Exchange Main Screen");
 
-        cout << setw(37) << left << "" << "===========================================\n";
-        cout << setw(37) << left << "" << "\t\tCurrency Exchange Menue\n";
-        cout << setw(37) << left << "" << "===========================================\n";
-        cout << setw(37) << left << "" << "\t[1] List Currencies.\n";
-        cout << setw(37) << left << "" << "\t[2] Find Currency.\n";
-        cout << setw(37) << left << "" << "\t[3] Update Rate.\n";
-        cout << setw(37) << left << "" << "\t[4] Currency Calculator.\n";
-        cout << setw(37) << left << "" << "\t[5] Main Menue.\n";
-        cout << setw(37) << left << "" << "===========================================\n";
+        cout << "\t" << "" << "===========================================\n";
+        cout << "\t" << "" << "\t\tCurrency Exchange Menue\n";
+        cout << "\t" << "" << "===========================================\n";
+        cout << "\t" << "" << "\t[1] List Currencies.\n";
+        cout << "\t" << "" << "\t[2] Find Currency.\n";
+        cout << "\t" << "" << "\t[3] Update Rate.\n";
+        cout << "\t" << "" << "\t[4] Currency Calculator.\n";
+        cout << "\t" << "" << "\t[5] Main Menue.\n";
+        cout << "\t" << "" << "===========================================\n";
 
         _PerformCurrenciesMainMenueOption(enCurrenciesMainMenueOptions(_ReadCurrenciesMainMenueOption()));
     }

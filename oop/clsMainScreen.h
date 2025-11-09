@@ -23,8 +23,8 @@ class clsMainScreen:protected clsScreen
 	static short _ReadMainMenuOption()
 	{
 		  
-		
-			cout << setw(37) << left << " " << "chose what do you want to do [ 1 - 10 ]" << endl;
+		cout << endl;
+			cout << "\t" << " " << "choose what do you want to do [ 1 - 10 ]" <<endl;
 			short choice = clsInputvalidate::readintnumber(1, 10,"Enter Number Between 1 and 10");
 			return choice;
 
@@ -165,21 +165,21 @@ public:
 	{
 		system("cls");
 		_DrawScreenHeader("MainScreen");
-
-		cout << setw(37) << left << " " << "===========================================" << endl;
-		cout << setw(37) << left << " " << "\t\t\tMain Menu" << endl;
-		cout << setw(37) << left << " " << "===========================================" << endl;
-		cout << setw(37) << left << " " << "\t[1] Show Client List " << endl;
-		cout << setw(37) << left << " " << "\t[2] ADD New Client  " << endl;
-		cout << setw(37) << left << " " << "\t[3] Delete Client  " << endl;
-		cout << setw(37) << left << " " << "\t[4] Update Client  " << endl;
-		cout << setw(37) << left << " " << "\t[5] Find Client  " << endl;
-		cout << setw(37) << left << " " << "\t[6] Transactions   " << endl;
-		cout << setw(37) << left << " " << "\t[7] Manage Users   " << endl;
-		cout << setw(37) << left << " " << "\t[8] Login Register   " << endl;
-		cout << setw(37) << left << " " << "\t[9] Currency Exchange  " << endl;
-		cout << setw(37) << left << " " << "\t[10] LogOut   " << endl;
-		cout << setw(37) << left << " " << "===========================================" << endl;
+		
+		cout << "\t"<< " " << "===========================================" << endl;
+		cout << "\t"<< " " << "             Main Menu" << endl;
+		cout << "\t"<< " " << "===========================================" << endl;
+		cout << "\t"<< " " << "[1] Show Client List " << endl;
+		cout << "\t"<< " " << "[2] ADD New Client  " << endl;
+		cout << "\t"<< " " << "[3] Delete Client  " << endl;
+		cout << "\t"<< " " << "[4] Update Client  " << endl;
+		cout << "\t"<< " " << "[5] Find Client  " << endl;
+		cout << "\t"<< " " << "[6] Transactions   " << endl;
+		cout << "\t"<< " " << "[7] Manage Users   " << endl;
+		cout << "\t"<< " " << "[8] Login Register   " << endl;
+		cout << "\t"<< " " << "[9] Currency Exchange  " << endl;
+		cout << "\t"<< " " << "[10] LogOut   " << endl;
+		cout << "\t"<< " " << "===========================================" << endl;
 		_PerformMainMenuOption((enMainMenuOptions)_ReadMainMenuOption());
 		
 

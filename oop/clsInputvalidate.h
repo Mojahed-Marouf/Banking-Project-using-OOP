@@ -60,7 +60,7 @@ public:
 		else
 			return false;
 	}
-	static int readintnumber(string massege="invalid number enter nuber again ")
+	static int readintnumber(string massege="invalid number enter number again ")
 	{
 		int number  ;
 		while (!(cin>>number))
@@ -73,10 +73,12 @@ public:
 
 		return number;
 	}
-	static int readintnumber(int from ,int to,string massege = "invalid number enter nuber again ")
+	static int readintnumber(int from ,int to,string massege = "invalid number enter number again ")
 	{
-		cout << massege << endl;
+		cout <<"\t" <<" "<< massege ;
+		cout << "  ";
 		int number = readintnumber();
+		cout << endl;
 		while (!IsNumberBetween(number,from,to))
 		{
 			cout << massege;

@@ -27,7 +27,7 @@ public:
 	{
 		_DrawScreenHeader("User Find Screen");
 		string username = "";
-		cout << endl << "Please Enter UserName";
+		cout << endl << "Please Enter UserName  ";
 		username = clsInputvalidate::readstring();
 		while (!clsUser::IsUsertExists(username))
 		{

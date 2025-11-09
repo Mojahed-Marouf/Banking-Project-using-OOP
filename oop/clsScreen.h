@@ -9,14 +9,14 @@ protected:
 
 	static void _DrawScreenHeader(string Title,string subtitle="")
 	{
-		cout << "\t\t""----------------------------------------------------------" << endl;
-		cout << "\t\t""                   " << Title << endl;
+		cout << "\t""----------------------------------------------------------" << endl;
+		cout << "\t""                   " << Title << endl;
 		if(subtitle!="")
-		cout << "\t\t""                   " << subtitle << endl;
-		cout << "\t\t""----------------------------------------------------------" << endl;
+		cout << "\t""                   " << subtitle << endl;
+		cout << "\t""----------------------------------------------------------" << endl;
 		cout << endl << endl;
-		cout << "\t\t\t\t""User:" << CurrentUser.UserName << endl;
-		cout << "\t\t\t\t""Date:" << clsDate::datetostring(clsDate())<<endl;
+		cout << "\t\t\t""User:" << CurrentUser.UserName << endl;
+		cout << "\t\t\t""Date:" << clsDate::datetostring(clsDate())<<endl;
 
 
 	}
