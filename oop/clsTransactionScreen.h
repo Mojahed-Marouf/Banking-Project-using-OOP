@@ -20,7 +20,7 @@ private:
 	{
 
 
-		cout << setw(37) << left << " " << "chose what do you want to do [ 1 - 6 ]" << endl;
+		cout << "\t" << " " << "chose what do you want to do [ 1 - 6 ]" << endl;
 		short choice = clsInputvalidate::readintnumber(1, 6, "Enter Number Between 1 and 6");
 		return choice;
 
@@ -108,16 +108,16 @@ public:
 		}
 		system("cls");
 		_DrawScreenHeader("Transactions Screen");
-		cout << setw(37) << left << " " << "=============================================================" << endl;
-		cout << setw(37) << left << " " << "\t\t  Transaction Menu" << endl;
-		cout << setw(37) << left << " " << "=============================================================" << endl;
-		cout << setw(37) << left << " " << "\t [1] Deposit " << endl;
-		cout << setw(37) << left << " " << "\t [2] Withdraw " << endl;
-		cout << setw(37) << left << " " << "\t [3] Total Balnces " << endl;
-		cout << setw(37) << left << " " << "\t [4] Transfer  " << endl;
-		cout << setw(37) << left << " " << "\t [5] Transfer Log  " << endl;
-		cout << setw(37) << left << " " << "\t [6] Main Menu " << endl;
-		cout << setw(37) << left << " " << "=============================================================" << endl;
+		cout << "\t"<< " " << "=============================================================" << endl;
+		cout << "\t"<< " " << "\t\t  Transaction Menu" << endl;
+		cout << "\t"<< " " << "=============================================================" << endl;
+		cout << "\t"<< " " << "\t [1] Deposit " << endl;
+		cout << "\t"<< " " << "\t [2] Withdraw " << endl;
+		cout << "\t"<< " " << "\t [3] Total Balnces " << endl;
+		cout << "\t"<< " " << "\t [4] Transfer  " << endl;
+		cout << "\t"<< " " << "\t [5] Transfer Log  " << endl;
+		cout << "\t"<< " " << "\t [6] Main Menu " << endl;
+		cout << "\t"<< " " << "=============================================================" << endl;
 		_PerforTransactionsOption((enTransactionsMenuOptions)_ReadTransactionsOption());
 	}
 };
